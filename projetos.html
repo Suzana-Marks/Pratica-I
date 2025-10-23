@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os projetos do Farol Interior, veja as oportunidades de voluntariado e faça uma doação para apoiar a saúde mental.">
+    <title>Farol Interior - Nossos Projetos de Apoio e Doações</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logotipo do Farol Interior">
+        <h1>Nossos Projetos: Trilhas para o Bem-Estar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Nossos Projetos & Ajuda</a></li>
+                <li><a href="cadastro.html">Seja um Voluntário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projetos-em-destaque">
+            <h2>Nossas Iniciativas Atuais</h2>
+            
+            <article>
+                <h3>Trilhas de Luz (Educação Emocional)</h3>
+                <figure>
+                    <img src="img/trilhas.jpg" alt="Pessoas sentadas em círculo em uma sessão de terapia em grupo.">
+                    <figcaption>Módulos digitais para desenvolver o autoconhecimento e a resiliência.</figcaption>
+                </figure>
+                <p>Oferecemos cursos online e workshops sobre manejo de ansiedade, técnicas de respiração e introdução à meditação, todos gratuitos e acessíveis.</p>
+                <p><strong>Impacto:</strong> 300 pessoas concluíram o módulo básico no último mês. </p>
+                <p><a href="#doacoes">Apoie este projeto</a></p>
+            </article>
+
+            <article>
+                <h3>Porto Seguro Online (Acolhimento Emergencial)</h3>
+                <p>Serviço de agendamento de sessões de escuta online e chat de apoio, garantindo que ninguém enfrente a crise sozinho.</p>
+                <p><strong>Próxima Meta:</strong> Dobrar o número de terapeutas voluntários para reduzir o tempo de espera.</p>
+                <p><a href="#voluntariado">Seja um voluntário terapeuta</a></p>
+            </article>
+        </section>
+        
+        <section id="voluntariado">
+            <h2>Seja um Guia Voluntário no Farol</h2>
+            <p>Seu tempo e sua escuta podem ser a luz que alguém precisa. Veja as oportunidades:</p>
+            
+            <ul>
+                <li><strong>Terapeuta Voluntário:</strong> Sessões de acolhimento online (mínimo 2h/semana).</li>
+                <li><strong>Monitor de Comunidade:</strong> Auxiliar na moderação dos grupos de suporte online.</li>
+                <li>**Apoio Administrativo:** Ajuda na organização de documentos e na captação de recursos (remoto).</li>
+            </ul>
+
+            <p>Faça parte da nossa Rede de Escuta!</p>
+            <p><a href="cadastro.html">Quero ser Voluntário!</a></p>
+        </section>
+
+        <section id="doacoes">
+            <h2>Seja a Luz: Faça Sua Doação</h2>
+            <p>Sua doação garante a manutenção da plataforma e o treinamento dos nossos voluntários.</p>
+            
+            <form action="processa-doacao.php" method="POST">
+                <fieldset>
+                    <legend>Contribua com o Bem-Estar</legend>
+                    
+                    <label for="valor_doacao">Valor (R$):</label>
+                    <input type="number" id="valor_doacao" name="valor_doacao" min="10" step="0.01" required>
+
+                    <label for="tipo_doacao">Recorrência:</label>
+                    <div>
+                        <input type="radio" id="unica" name="tipo_doacao" value="unica" checked>
+                        <label for="unica">Doação Única</label>
+
+                        <input type="radio" id="mensal" name="tipo_doacao" value="mensal">
+                        <label for="mensal">Mensão</label>
+                    </div>
+                </fieldset>
+                <button type="submit">Doar Agora</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><a href="index.html">Voltar para Início</a> | <a href="documentos/politica.html">Política de Privacidade</a></p>
+        <p>&copy; 2024 Farol Interior.</p>
+    </footer>
+</body>
+</html>
