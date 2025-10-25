@@ -1,0 +1,22 @@
+/* ========================================================= */
+/* 3. COMPONENTS: Alertas (Feedback) */
+/* ========================================================= */
+.alert {
+    padding: var(--espacamento-md);
+    border-radius: var(--espacamento-xs);
+    margin-bottom: var(--espacamento-lg);
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.alert-success {
+    background-color: color-mix(in srgb, var(--cor-sucesso) 10%, white);
+    color: var(--cor-sucesso);
+    border-color: var(--cor-sucesso);
+}
+
+.alert-error {
+    background-color: color-mix(in srgb, var(--cor-erro) 10%, white);
+    color: var(--cor-erro);
+    border-color: var(--cor-erro);
+}

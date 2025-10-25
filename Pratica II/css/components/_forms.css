@@ -1,0 +1,52 @@
+/* ========================================================= */
+/* 3. COMPONENTS: Formulários (Forms) */
+/* ========================================================= */
+
+.form-group {
+    margin-bottom: var(--espacamento-md);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: var(--espacamento-xs);
+    font-size: var(--tamanho-p);
+}
+
+.form-control {
+    width: 100%;
+    padding: var(--espacamento-sm);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--espacamento-xs);
+    font-size: var(--tamanho-p);
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--cor-primaria);
+    outline: none; /* Remove a borda de foco padrão do navegador */
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.3); /* Sombra suave de foco */
+}
+
+/* ------------------- */
+/* Validação Visual Nativa (Requisito) */
+/* ------------------- */
+
+/* Estilo para inputs válidos (preenchidos corretamente) */
+.form-control:valid {
+    border-color: var(--cor-sucesso);
+}
+
+/* Estilo para inputs inválidos (erros ou campos required não preenchidos) */
+.form-control:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: var(--cor-erro);
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.3);
+}
+
+/* Estilo específico para inputs de data (melhora visualmente) */
+input[type="date"] {
+    appearance: none;
+    padding: var(--espacamento-sm);
+}

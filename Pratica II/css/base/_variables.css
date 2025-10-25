@@ -1,0 +1,40 @@
+/* ==================================================================== */
+/* 1. Design System: Variáveis CSS (Cores, Fontes, Espaçamento) */
+/* ==================================================================== */
+
+:root {
+    /* ------------------- */
+    /* Paleta de Cores (REQUISITO: Mínimo 8 cores) */
+    /* ------------------- */
+    --cor-primaria: #1E90FF;    /* Azul Principal (Guia, Confiança) */
+    --cor-secundaria: #FFD700;  /* Amarelo Ouro (Luz, Farol) */
+    --cor-acento: #ADD8E6;      /* Azul Claro (Suavidade) */
+    --cor-sucesso: #28A745;     /* Verde (Bem-Estar) */
+    --cor-erro: #DC3545;        /* Vermelho (Alerta) */
+    
+    /* Neutras */
+    --cor-fundo-claro: #F8F9FA; 
+    --cor-fundo-escuro: #343A40;
+    --cor-texto-principal: #212529;
+    --cor-texto-claro: #FFFFFF; 
+
+    /* ------------------- */
+    /* Espaçamento Modular (REQUISITO: Múltiplos de 8px) */
+    /* ------------------- */
+    --espacamento-xs: 8px;   
+    --espacamento-sm: 16px;  
+    --espacamento-md: 24px;  
+    --espacamento-lg: 32px;  
+    --espacamento-xl: 48px;
+    --espacamento-xxl: 64px; 
+
+    /* ------------------- */
+    /* Tipografia (REQUISITO: Hierarquia Mínimo 5 tamanhos) */
+    /* ------------------- */
+    --fonte-principal: 'Segoe UI', Arial, sans-serif; 
+    --tamanho-h1: 2.8rem;   
+    --tamanho-h2: 2.0rem;   
+    --tamanho-h3: 1.5rem;   
+    --tamanho-p: 1rem;      
+    --tamanho-small: 0.85rem; 
+}

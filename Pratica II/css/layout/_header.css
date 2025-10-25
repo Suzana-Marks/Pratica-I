@@ -1,0 +1,27 @@
+/* Estilo do Menu Hambúrguer (Visível apenas em Mobile) */
+.menu-toggle {
+    display: none; /* Esconder por padrão no desktop */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--cor-texto-claro);
+    cursor: pointer;
+}
+
+/* Esconde o menu desktop no mobile e mostra o botão */
+@media (max-width: 767px) {
+    .nav {
+        /* Esconde a navegação no mobile por padrão (ou a transforma em coluna) */
+        display: none; 
+        /* Quando a navegação estiver visível, o JS vai adicionar 'display: flex; flex-direction: column;' */
+    }
+    
+    .menu-toggle {
+        display: block; /* Mostra o ícone de hambúrguer no mobile */
+    }
+
+    .header-container {
+        /* Permite que o logo e o botão fiquem na mesma linha */
+        padding: var(--espacamento-sm) var(--espacamento-md); 
+    }
+}

@@ -1,0 +1,53 @@
+/* ========================================================= */
+/* 2. LAYOUT: Rodapé (Footer) */
+/* ========================================================= */
+
+.footer {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    padding: var(--espacamento-xl) 0;
+}
+
+/* Container de Seções do Rodapé (Navegação, Legal, etc.) */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Padrão Mobile: 1 coluna */
+    gap: var(--espacamento-lg);
+    margin-bottom: var(--espacamento-lg);
+}
+
+/* Layout em Desktop: Divide em 2 colunas (ou mais) */
+@media (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 Colunas no desktop */
+    }
+}
+
+.footer-title {
+    font-size: var(--tamanho-h3);
+    color: var(--cor-secundaria); /* Usa a cor de destaque (Farol) */
+    margin-bottom: var(--espacamento-sm);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link {
+    color: var(--cor-texto-claro);
+    font-size: var(--tamanho-p);
+    padding: 4px 0;
+}
+
+.footer-link:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--espacamento-sm);
+    font-size: var(--tamanho-small);
+}

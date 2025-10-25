@@ -1,0 +1,30 @@
+/* ==================================================================== */
+/* ARQUIVO PRINCIPAL (style.css) - Unidade II: Importação de Módulos CSS */
+/* ==================================================================== */
+
+/* 1. BASE (Design System) */
+@import url("base/_variables.css");
+@import url("base/_reset.css");
+@import url("base/_typography.css");
+
+/* 2. LAYOUT (Estrutura e Responsividade) */
+@import url("layout/_grid.css");
+@import url("layout/_header.css");
+@import url("layout/_footer.css");
+
+/* 3. COMPONENTS (Elementos Reutilizáveis) */
+@import url("components/_buttons.css");
+@import url("components/_cards.css");
+@import url("components/_forms.css");
+
+
+/* Estilos Globais do Corpo */
+body {
+    /* Define o fundo e a fonte global, usando variáveis */
+    font-family: var(--fonte-principal); 
+    color: var(--cor-texto-principal);
+    background-color: var(--cor-fundo-claro);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}

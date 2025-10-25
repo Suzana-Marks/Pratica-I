@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os projetos do Farol Interior, veja as oportunidades de voluntariado e faça uma doação para apoiar a saúde mental.">
+    <title>Farol Interior - Nossos Projetos de Apoio e Doações</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logotipo do Farol Interior">
+            </a>
+            
+            <button class="menu-toggle" aria-label="Abrir menu de navegação">☰</button>
+            
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="projetos.html" class="nav-link active">Nossos Projetos & Ajuda</a>
+                <a href="cadastro.html" class="nav-link">Seja um Voluntário</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="text-center mt-5 mb-4">Nossos Projetos: Trilhas para o Bem-Estar</h1>
+
+        <div class="alert alert-success">Sua doação foi registrada com sucesso! Obrigado por ser a luz.</div>
+
+        <section id="projetos-em-destaque" class="mb-5">
+            <h2 class="mb-4">Nossas Iniciativas Atuais</h2>
+            
+            <div class="row">
+                <div class="col-12 col-md-6"> 
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/trilhas.jpg" alt="Pessoas sentadas em círculo em uma sessão de terapia em grupo.">
+                        </div>
+                        <h3 class="card-title">Trilhas de Luz (Educação Emocional)</h3>
+                        <div class="card-body">
+                            <p>Oferecemos cursos online e workshops sobre manejo de ansiedade, técnicas de respiração e introdução à meditação, todos gratuitos e acessíveis.</p>
+                            <p class="mb-3"><strong>Impacto:</strong> 300 pessoas concluíram o módulo básico no último mês.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#doacoes" class="btn btn-primary">Apoie este projeto</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="img/porto.jpg" alt="Duas pessoas conversando em um ambiente seguro.">
+                        </div>
+                        <h3 class="card-title">Porto Seguro Online (Acolhimento Emergencial)</h3>
+                        <div class="card-body">
+                            <p>Serviço de agendamento de sessões de escuta online e chat de apoio, garantindo que ninguém enfrente a crise sozinho.</p>
+                            <p class="mb-3"><strong>Próxima Meta:</strong> Dobrar o número de terapeutas voluntários para reduzir o tempo de espera.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#voluntariado" class="btn btn-outline">Seja um voluntário terapeuta</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section id="voluntariado" class="mb-5">
+            <h2 class="mb-4">Seja um Guia Voluntário no Farol</h2>
+            <p class="mb-4">Seu tempo e sua escuta podem ser a luz que alguém precisa. Veja as oportunidades:</p>
+            
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <h3 class="card-title">Terapeuta Voluntário</h3>
+                        <div class="card-body">
+                            <p>Sessões de acolhimento online (mínimo 2h/semana).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <h3 class="card-title">Monitor de Comunidade</h3>
+                        <div class="card-body">
+                            <p>Auxiliar na moderação dos grupos de suporte online.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <h3 class="card-title">Apoio Administrativo</h3>
+                        <div class="card-body">
+                            <p>Ajuda na organização de documentos e na captação de recursos (remoto).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="cadastro.html" class="btn btn-primary">Quero ser Voluntário!</a>
+            </div>
+        </section>
+
+        <section id="doacoes" class="mb-5">
+            <h2 class="mb-4">Seja a Luz: Faça Sua Doação</h2>
+            <p class="mb-4">Sua doação garante a manutenção da plataforma e o treinamento dos nossos voluntários.</p>
+            
+            <form action="processa-doacao.php" method="POST" class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="valor_doacao" class="form-label">Valor (R$):</label>
+                        <input type="number" id="valor_doacao" name="valor_doacao" min="10" step="0.01" required class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Recorrência:</label>
+                        <div class="d-flex gap-3">
+                            <div>
+                                <input type="radio" id="unica" name="tipo_doacao" value="unica" checked>
+                                <label for="unica">Doação Única</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="mensal" name="tipo_doacao" value="mensal">
+                                <label for="mensal">Mensal</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success mt-3">Doar Agora</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3 class="footer-title">Navegação</h3>
+                    <div class="footer-links">
+                        <a href="index.html" class="footer-link">Início</a>
+                        <a href="projetos.html" class="footer-link">Nossos Projetos</a>
+                        <a href="cadastro.html" class="footer-link">Seja Voluntário</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Legal</h3>
+                    <div class="footer-links">
+                        <a href="documentos/politica.html" class="footer-link">Política de Privacidade</a>
+                        <a href="documentos/termos.html" class="footer-link">Termos de Uso</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Farol Interior. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
